@@ -1,13 +1,13 @@
 import styled from "styled-components";
 import { BiSearchAlt2, BiMicrophone } from "react-icons/bi";
 import { AiOutlineClose } from "react-icons/ai";
-const Post = () => {
+const Post = ({displayText}) => {
   return (
     <Wrapper id="my-image">
       <Bar>
         <TextSection className="text-section">
           <BiSearchAlt2 />
-          Build Images with React
+          {displayText}
         </TextSection>
         <Icons className="icons">
           <AiOutlineClose /> | <BiMicrophone />
@@ -24,7 +24,7 @@ const Bar = styled.div`
   display: flex;
   align-items: center;
   border-radius: 10px;
-  font-size: 3em;
+  font-size: 2em;
   padding: 15px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   & .text-section {
@@ -44,10 +44,11 @@ const Bar = styled.div`
 `;
 const TextSection = styled.div``;
 const Wrapper = styled.div`
-  width: 700px;
+  width: 500px;
   background-color: #01204c;
-  height: 700px;
+  height: 500px;
   display: flex;
+  padding: 10px;
   justify-content: center;
   align-items: center;
 `;
