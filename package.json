@@ -1,5 +1,6 @@
 {
   "name": "instagram-post-genrator",
+  "homepage": "https://kubekode.github.io/instaPost",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
